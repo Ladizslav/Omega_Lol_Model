@@ -1,0 +1,4 @@
+API_KEY = "RGAPI-5d415896-fd34-4d0a-8817-bc26f332887f"
+HEADERS = {
+    "X-Riot-Token": API_KEY
+}
