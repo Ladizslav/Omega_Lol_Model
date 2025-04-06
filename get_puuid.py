@@ -3,7 +3,7 @@ import csv
 import json
 from config.config import HEADERS
 
-# Načtení hráčů ze souboru JSON
+# Načtení hráčů ze souboru json
 try:
     with open('json/players.json', 'r') as f:
         players = json.load(f)['players']
@@ -35,7 +35,7 @@ except Exception as e:
     print(f"Chyba při procházení hráčů: {str(e)}")
 
 
-# Export puuid do CSV
+# Export puuid do csv
 try:
     if puuids:
         with open("csv/puuids.csv", "w", newline="") as f:

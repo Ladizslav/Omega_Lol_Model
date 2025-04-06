@@ -88,7 +88,7 @@ except Exception as e:
 try:
     with open('csv/champion_mapping.csv', 'w', newline='', encoding='utf-8') as f:
         writer = csv.writer(f)
-        writer.writerow(['champion_id', 'champion_name'])
+        writer.writerow(['champion_name', 'champion_id'])
         writer.writerows(champion_ids.items())
     print("Mapování championů bylo uloženo do champion_mapping.csv")
 except Exception as e:

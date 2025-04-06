@@ -1,7 +1,7 @@
 # Základní informace
 - Jméno projektu: Machine learning
 - Autor: Ladislav Dobiáš
-- Datum dokončení: 4.4.2025
+- Datum dokončení: 6.4.2025
 - Kontaktní údaje: dobias@spsejecna.cz
 - Instituce: Střední průmyslová škola elektrotechnická, Praha 2, Ječná 30
 - Typ projektu: Školní projekt
@@ -21,8 +21,13 @@
     ./pip.exe install pickle
     ./pip.exe install sklearn
     ./pip.exe install sklearn.model
+    ./pip.exe install sklearn.ensemble
+    ./pip.exe install sklearn.metrics
+    ./pip.exe install sklearn.preprocessing
+    ./pip.exe install tensorflow
+    ./pip.exe install tensorflow.keras
 
-    PS: numpy se stahuje automaticky s pandasem a sklearn se musí určit přímo
+PS: numpy se stahuje automaticky s pandasem a sklearn se musí určit přímo
 
 ---
 
@@ -51,7 +56,7 @@ Vybral jsem si LOL, protože mě zajímalo, jak to vůbec vypadá a co s tím do
 
 1. Získání puuid (originálí id hráče na serveru) díký jménu, hashtagu a regionu hráče (viz. players.json).
 2. Pomocí puuid získáme id všech posledních 2000 her hráče. 
-PS: Nemusí to vyhledat přesně 2000 her, server má jen omezený počet her od roku 2020, takže to spíš hledá méně.
+PS: Nemusí to vyhledat přesně 2000 her, server má jen omezený počet her přibližně od roku 2020, takže to spíš hledá méně.
 3. Pomocí id hry se získají detaily hry do jednoho json (~5000 řádků json na 1 hru).
 4. Hledání detalů hráče díky puuid z detalů hry a uloží se nefiltrované statistiky hráče.
 5. Zformátování statistiky hráče na přípravu strojového učení
@@ -75,11 +80,9 @@ Riot games má omezení na 200 za 2 minuty, proto při získávání to trvalo:
 2. Spusťte skript stisknutím klávesy `F5` nebo příkazem `Run`.
         
 ### Přímo ze souboru
-1. Otevřete terminál.
-2. Navigujte do složky, kde se nachází soubor `main.py`.
-3. Spusťte příkaz:
-
-    python main.py
+1. Otevřete správce.
+2. Navigujte do složky, kde se nachází projekt
+3. Spusťte soubor `main.bat`.
 
 ---
 
@@ -96,3 +99,5 @@ Ve složce Used_files jsem použil všechny
 
 README2.md - z Bank system alfy na formát toho README
 1_nacteni_dat.py - formát na logickou regresy modelu
+1_RndForrReg.py - formát na random forest model
+1_neur_site_regrese.py - formát na neurální síť

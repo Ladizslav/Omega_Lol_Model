@@ -3,7 +3,7 @@ import time
 import json
 from config.config import HEADERS
 
-# Načtení  ze csv suboru
+# Načtení ze csv suboru
 try:
     with open("json/match_ids.json") as f:
         match_ids = json.load(f)
@@ -13,6 +13,7 @@ except Exception as e:
 all_matches = []
 processed = set()
 
+# Načtení detailů zápasů z API
 try:
     for i, match_id in enumerate(match_ids):
         if match_id in processed:
@@ -32,6 +33,7 @@ try:
 except Exception as e:
     print(f"Chyba při získávání detailů ze zápasů: {str(e)}")
 
+# Export detailů do json
 try:
     with open("json/all_matches.json", "w",encoding ='utf-8') as f:
         json.dump(all_matches, f, ensure_ascii=False, indent=2)
