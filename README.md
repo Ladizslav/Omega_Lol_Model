@@ -101,3 +101,8 @@ README2.md - z Bank system alfy na formát toho README
 1_nacteni_dat.py - formát na logickou regresy modelu
 1_RndForrReg.py - formát na random forest model
 1_neur_site_regrese.py - formát na neurální síť
+
+## Velké soubory
+
+Tady radši hodím odkaz na soubory pokud bude potřeba využít:
+**[Úschovna](https://www.uschovna.cz/zasilka/SCS6SI2NHRWZA5FN-5YC/)**
